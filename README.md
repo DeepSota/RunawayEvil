@@ -2,8 +2,9 @@
 
 # Runaway Evil: Jailbreaking Image-to-Video Generative Models
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv:2512.06674-red)](https://arxiv.org/abs/2512.06674)
 [![Project Page](https://img.shields.io/badge/🌐-Project_Page-blue)](https://xzxg001.github.io/RunawayEvil/)
+[![Paper](https://img.shields.io/badge/Paper-arXiv:2512.06674-red)](https://arxiv.org/abs/2512.06674)
+
 
 </div>
 
