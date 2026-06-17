@@ -1,13 +1,11 @@
 <div align="center">
 
-<table align="center" style="border:none;border-collapse:collapse;"><tr style="border:none;">
-<td style="border:none;vertical-align:middle;"><img src="imgs/evil2.png" width="80"></td>
-<td style="border:none;vertical-align:middle;"><h1>Runaway Evil: Jailbreaking Image-to-Video Generative Models</h1></td>
-</tr></table>
+<img src="imgs/evil2.png" width="80"><br>
+
+# Runaway Evil: Jailbreaking Image-to-Video Generative Models
 
 [![Project Page](https://img.shields.io/badge/🌐-Project_Page-blue)](https://xzxg001.github.io/RunawayEvil/)
 [![Paper](https://img.shields.io/badge/Paper-arXiv:2512.06674-red)](https://arxiv.org/abs/2512.06674)
-
 
 </div>
 
