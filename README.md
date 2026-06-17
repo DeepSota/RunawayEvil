@@ -13,9 +13,7 @@
   <img src="imgs/frame.png" alt="Framework Overview" width="100%">
 </div>
 
-## Abstract
-
-This repository contains the official implementation for the paper: **"Runaway Evil: Jailbreaking Image-to-Video Generative Models"**. We introduce a novel, evolutionary framework that uses Reinforcement Learning (RL) to automatically discover and execute complex, multi-step adversarial attacks against state-of-the-art Image-to-Video (I2V) models. Our system trains an autonomous agent to strategically manipulate images and generate video prompts that bypass safety alignments, effectively creating "jailbreaks."
+**RunawayEvil** is an open-source security evaluation framework for Image-to-Video (I2V) generative models, designed to investigate jailbreak risks and model vulnerabilities under multimodal inputs. Built on a "Strategy–Tactic–Action" paradigm, it supports unified and reproducible security analysis and comparative evaluation across mainstream I2V models, providing an experimental foundation for red teaming, vulnerability research, and defense development.
 
 <div align="center">
   <img src="imgs/visual_results.png" alt="Visual Results" width="100%">
