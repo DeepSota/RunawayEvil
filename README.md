@@ -15,7 +15,7 @@
 
 > **RunawayEvil** is an open-source security evaluation framework for Image-to-Video (I2V) generative models, designed to investigate jailbreak risks and model vulnerabilities under multimodal inputs. Built on a "Strategy–Tactic–Action" paradigm, it supports unified and reproducible security analysis and comparative evaluation across mainstream I2V models, providing an experimental foundation for red teaming, vulnerability research, and defense development.
 
-## Successful Jailbreak Demonstration
+## 🔓 Successful Jailbreak Demonstration
 
 <div align="center">
   <img src="imgs/visual_results.png" alt="Successful Jailbreak Demonstration" width="100%">
@@ -23,7 +23,7 @@
 
 ---
 
-## Prerequisites
+## 📋 Prerequisites
 
 ### Hardware
 
@@ -37,7 +37,7 @@
 - Conda for environment management.
 - PyTorch with CUDA support.
 
-## Setup & Installation
+## 🛠️ Setup & Installation
 
 1. **Clone the Repository:**
 
@@ -79,7 +79,7 @@
     - Download the COCO images (e.g., `val2017`).
     - Prepare corresponding `.txt` annotation files, where each file has the same name as its image and contains one or more caption strings, each on a new line.
 
-## Configuration
+## ⚙️ Configuration
 
 Before running any script, you **must** configure the paths at the top of each file. Open `stage1.py`, `stage2.py`, and `inference.py` and fill in the empty string variables (`""`) with the absolute paths to your models, datasets, and output directories.
 
@@ -107,7 +107,7 @@ PHASE2_LOG_DIR = "/path/to/your/outputs/phase2_logs/"  # For stage2 and inferenc
 WAN22_PROJECT_DIR = "/path/to/your/Wan2.2-TI2V-5B-Turbo-main" # For stage1/stage2
 ```
 
-## Usage
+## 🚀 Usage
 
 ### Stage 1: Evolutionary Training
 
@@ -146,11 +146,11 @@ This script uses the final, fine-tuned agent from Stage 2 to attack a set of tes
 
 The script will iterate through images in `TEST_IMAGE_DIR`, perform the multi-step attack, and save a detailed log of the results to `OUTPUT_LOG_FILE`.
 
-## Ethical Considerations
+## ⚠️ Ethical Considerations
 
 This framework is intended for research purposes, specifically for evaluating and improving the safety and robustness of generative AI models (i.e., "red-teaming"). The unauthorized or malicious use of this code to generate harmful, unsafe, or inappropriate content is strictly prohibited. Users are expected to adhere to the terms of service of any models used and to employ this tool responsibly and ethically.
 
-## Citation
+## 📝 Citation
 
 If you find our work useful in your research, please consider citing:
 
@@ -165,7 +165,7 @@ If you find our work useful in your research, please consider citing:
 }
 ```
 
-## Links
+## 🔗 Links
 
 - [Paper (arXiv)](https://arxiv.org/abs/2512.06674)
 - [Project Page](https://xzxg001.github.io/RunawayEvil/)
