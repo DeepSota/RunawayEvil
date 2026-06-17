@@ -1,0 +1,13 @@
+torch
+torchvision
+transformers
+accelerate
+bitsandbytes
+sentence-transformers
+stable-baselines3[extra]
+gymnasium
+diffusers
+lpips
+pandas
+opencv-python
+omegaconf
