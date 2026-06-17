@@ -25,39 +25,6 @@ This repository contains the official implementation for the paper: **"Runaway E
 
 ---
 
-## Framework Overview
-
-The framework is built around a Deep Reinforcement Learning agent (using Proximal Policy Optimization - PPO) that interacts with a custom `gymnasium` environment (`VideoJailbreakEnv`).
-
-- **Reinforcement Learning (RL) Agent**: The agent's goal is to learn an optimal policy for selecting the most effective "tactic" to generate unsafe video content.
-- **Environment**: The environment simulates a complete red-teaming attempt. It encompasses prompt generation, image editing, video generation, and safety judging.
-- **State**: The current image being manipulated, represented as a NumPy array.
-- **Action**: The selection of an abstract "attack tactic" from an evolving list (e.g., "Use role-playing misdirection to justify unsafe elements").
-- **Reward**: The agent is rewarded for successfully generating content deemed "unsafe" by a Judge model. It is penalized for failing, taking too many steps, making significant visual edits (measured by LPIPS), and using suspicious keywords in prompts.
-- **Evolutionary Tactic Generation**: This is the framework's key innovation. A meta-learning loop analyzes successful attacks from the agent's memory bank and uses a powerful Large Vision-Language Model (LVLM) to synthesize new, more general attack tactics. These new tactics are then added to the agent's action space, allowing it to discover increasingly complex and effective strategies over time.
-
-## System Architecture
-
-The attack pipeline consists of several interconnected AI models, orchestrated by the RL agent:
-
-1. **Strategist Agent (PPO)**: The RL agent that selects a high-level tactic for the attack at each step.
-2. **Prompt Generator (LLaVA-Next)**: Given the agent's chosen tactic and the current image, this LVLM generates two coordinated prompts:
-    - `P_edit`: An instruction for the image editor.
-    - `P_video`: A prompt for the video generator.
-3. **Image Editor (FLUX-Kontext)**: Modifies the input image based on the `P_edit` prompt, creating an adversarial intermediate asset.
-4. **Video Generator (Wan2.2)**: Creates a video based on the edited image and the `P_video` prompt.
-5. **Judge (Qwen-VL)**: An independent LVLM that evaluates the final generated video and classifies it as "safe" or "unsafe," providing the primary reward signal for the RL agent.
-6. **Tactic Analyzer (Qwen-VL Large)**: In Stage 1, this powerful LVLM analyzes the memory of successful attacks to propose new, generalized tactics, enabling the evolutionary aspect of the framework.
-
-## File Structure
-
-| File | Description |
-|------|-------------|
-| `stage1.py` | Implements the first phase of training. The RL agent learns initial strategies while the **Tactic Analyzer** simultaneously observes successes and evolves the list of available tactics. This expands the agent's action space over time. |
-| `stage2.py` | Implements the second phase of training (fine-tuning). It loads the evolved tactics from Stage 1 and continues to train the RL agent on this fixed, expanded set of tactics to refine its policy. |
-| `inference.py` | A standalone script to run the trained PPO agent for evaluation. It loads a trained model and attacks a series of test images, logging the results. |
-| `run_inference.py` | A helper script for the original `Wan2.2-Turbo` model. **Note: This file is not used if you are loading `Wan2.2-5B` directly from the Hugging Face Hub, as in the final version of `inference.py`.** |
-
 ## Prerequisites
 
 ### Hardware
