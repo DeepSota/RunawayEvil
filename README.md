@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="imgs/evil.jpg" width="80"><br>
+<img src="imgs/evil.jpg" width="1000"><br>
 
 # Runaway Evil: Jailbreaking Image-to-Video Generative Models
 
