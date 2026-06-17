@@ -155,13 +155,12 @@ This framework is intended for research purposes, specifically for evaluating an
 If you find our work useful in your research, please consider citing:
 
 ```bibtex
-@misc{zhang2025runawayevil,
-      title={Runaway Evil: Jailbreaking Image-to-Video Generative Models},
-      author={Zixin Zhang and others},
-      year={2025},
-      eprint={arXiv:2512.06674},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{wang2026runawayevil,
+  title={Runawayevil: Jailbreaking the image-to-video generative models},
+  author={Wang, Songping and Qian, Rufan and Lyu, Yueming and Liu, Qinglong and Zou, Linzhuang and Qin, Jie and Liu, Songhua and Shan, Caifeng},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={9296--9305},
+  year={2026}
 }
 ```
 
