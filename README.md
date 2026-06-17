@@ -13,7 +13,7 @@
   <img src="imgs/frame.png" alt="Framework Overview" width="100%">
 </div>
 
-> **RunawayEvil** is an open-source security evaluation framework for Image-to-Video (I2V) generative models, designed to investigate jailbreak risks and model vulnerabilities under multimodal inputs. Built on a **"Strategy–Tactic–Action"** paradigm, it supports unified and reproducible security analysis and comparative evaluation across mainstream I2V models, providing an experimental foundation for red teaming, vulnerability research, and defense development.
+> **RunawayEvil** is an open-source security evaluation framework for Image-to-Video (I2V) generative models, designed to investigate jailbreak risks and model vulnerabilities under multimodal inputs. Built on a "Strategy–Tactic–Action" paradigm, it supports unified and reproducible security analysis and comparative evaluation across mainstream I2V models, providing an experimental foundation for red teaming, vulnerability research, and defense development.
 
 ## Successful Jailbreak Demonstration
 
