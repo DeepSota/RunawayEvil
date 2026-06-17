@@ -1,8 +1,8 @@
 <div align="center">
 
-<table align="center"><tr>
-<td><img src="imgs/evil2.png" width="80"></td>
-<td><h1>Runaway Evil: Jailbreaking Image-to-Video Generative Models</h1></td>
+<table align="center" style="border:none;border-collapse:collapse;"><tr style="border:none;">
+<td style="border:none;vertical-align:middle;"><img src="imgs/evil2.png" width="80"></td>
+<td style="border:none;vertical-align:middle;"><h1>Runaway Evil: Jailbreaking Image-to-Video Generative Models</h1></td>
 </tr></table>
 
 [![Project Page](https://img.shields.io/badge/🌐-Project_Page-blue)](https://xzxg001.github.io/RunawayEvil/)
